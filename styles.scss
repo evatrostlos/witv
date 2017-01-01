@@ -1,0 +1,81 @@
+//Color Palette Variables
+$brand: #EF3D4D;
+$primary: #4E5458;
+$accent: #EC7483;
+$success: #7FD323;
+$error: #FF3366;
+$neutral-gray: #333333;
+$white: white;
+
+//Font Variables
+$primary-font: 'Playfair Display', serif;
+$secondary-font: 'Josefin Sans', sans-serif;
+$large-size: 38px;
+$medium-size: 28px;
+$small-size: 20px;
+$thin-weight: 100;
+$medium-weight: 300;
+$thick-weight: 400;
+
+
+body {
+  color: $primary;
+  margin: 0;
+  background-color: $white;
+  font-size: $small-size;
+  font-family: $primary-font;
+}
+
+h1, h2, h3 {
+  font-family: $secondary-font;
+  font-size: $large-size;
+  padding: 0 10px;
+  background-image:
+          linear-gradient(
+                          transparent 52%,
+                          $accent 53%
+          );
+  display: inline-block;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  border-top: 5px solid $brand;
+  background-color: $white;
+  position: fixed;
+  width: 100%;
+
+  img {
+    margin-top: 10px;
+    float: left;
+    width: 120px;
+  }
+
+  ul {
+    float: right;
+
+    li {
+      list-style: none;
+      float: left;
+      padding: 15px;
+    }
+  }
+}
+
+section {
+  padding-top: 200px;
+}
+
+.btn {
+  background-color: $brand;
+  padding: 10px 20px;
+  color: $white;
+  border: 0;
+  border-radius: 10px;
+  font-size: $small-size;
+  font-family: $primary-font;
+}
